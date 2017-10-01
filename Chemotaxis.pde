@@ -3,7 +3,7 @@ Bacteria [] dots;
  void setup()   
  {
    size(300,300);
-    dots = new Bacteria [10];
+    dots = new Bacteria [100];
    for (int i = 0; i< dots.length; i++)
    {
     dots[i] = new Bacteria();
@@ -38,19 +38,37 @@ Bacteria [] dots;
    myY = myY + (int)(Math.random()*5-2.5);
   }
    void show() //lots of java!
+   
    {
-     if(mouseX <= myX+4 && mouseY <=myY + 4)
+     
+     if(mouseX <= myX+15 && mouseX >=myX - 15)
      {
-       fill(100,5,myColor);
-     }
-     else if (mouseX>= myX-4 && mouseY >=myY - 4)
-     {
+       if (mouseY>= myY-15 && mouseY <=myY + 15)
+    {
        fill(100,5, myColor);
         }
-      else
+     }
+      else if ( mouseX <=myX+30 && mouseX >=myX - 30)
+     {
+       if (mouseY>= myY-30 && mouseY <=myY + 30)
       {
          fill(50,5, myColor);
       }
+     }
+     else if
+     ( mouseX <=myX+45 && mouseX >=myX - 45)
+     {
+       if (mouseY>= myY-45 && mouseY <=myY + 45)
+      {
+         fill(70,160,myColor);
+      }
+     }
+     else
+     {
+       fill(100,255,myColor);
+     }
+     
+     
      myColor = (int)(Math.random()*100+155);
      //fill(100,5,myColor);
      ellipse(myX,myY,20,20);
@@ -58,4 +76,7 @@ Bacteria [] dots;
  }
  
  
+ 
+ 
+
  
