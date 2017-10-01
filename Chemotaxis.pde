@@ -45,14 +45,16 @@ Bacteria [] dots;
      {
        if (mouseY>= myY-15 && mouseY <=myY + 15)
     {
-       fill(100,5, myColor);
+      // fill(100,5, myColor);
+        fill(100,255,myColor);
         }
      }
       else if ( mouseX <=myX+30 && mouseX >=myX - 30)
      {
        if (mouseY>= myY-30 && mouseY <=myY + 30)
       {
-         fill(50,5, myColor);
+         //fill(50,5, myColor);
+         fill(70,160,myColor);
       }
      }
      else if
@@ -60,12 +62,14 @@ Bacteria [] dots;
      {
        if (mouseY>= myY-45 && mouseY <=myY + 45)
       {
-         fill(70,160,myColor);
+        // fill(70,160,myColor);
+               fill(50,5, myColor);
       }
      }
      else
      {
-       fill(100,255,myColor);
+      // fill(100,255,myColor);
+       fill(100,5, myColor);
      }
      
      
@@ -77,6 +81,4 @@ Bacteria [] dots;
  
  
  
- 
-
  
